@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="containter">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+                
+            </div> 
+            <div class="right-side">
+                <div class="brand">
+                    <div>SuperMART</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/mobile.jpg)"></div>
+      
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/mobiles.png" alt="">
+                  </div>
+      
+                  
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/books.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/books.png" alt="">
+                  </div>
+      
+                  
+                </div>
+              </div>
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/food.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/food.png" alt="">
+                  </div>
+      
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/clothes.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/fashion.png" alt="">
+                  </div>
+      
+                
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/accessories.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/accessories.png" alt="">
+                  </div>
+      
+
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/kids.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/kids.png" alt="">
+                  </div>
+ 
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/furnitures.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/furnitures.png" alt="">
+                  </div>
+      
+
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/home.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/home.png" alt="">
+                  </div>
+      
+                 
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/toys.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/toys.png" alt="">
+                  </div>
+      
+                </div>
+              </div>
+      
+              
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/fruits.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/fruits.png" alt="">
+                  </div>
+      
+                 
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/grocery.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/grocery.png" alt="">
+                  </div>
+      
+                  
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/beauty.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/beauty.png" alt="">
+                  </div>
+      
+                  
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      
+      </body>
+      
+      <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+      
+        portfolioItems.forEach(portfolioItem => {
+          portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('image-blur');
+          });
+      
+          portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-blur');
+          });
+        });
+      
+      </script>
+      
+      </html>
